@@ -1,1 +1,1 @@
-select  acc_no, source, mis_date from  RAW.JAFFLE_SHOP.fics
+select  acc_no, source, mis_date,  current_date() as load_ts from  RAW.JAFFLE_SHOP.fics
