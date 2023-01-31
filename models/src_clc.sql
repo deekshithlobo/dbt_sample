@@ -1,1 +1,0 @@
-select * from ANALYTICS.INC.clcs

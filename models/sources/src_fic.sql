@@ -1,0 +1,1 @@
+select  acc_no, source, mis_date from  RAW.JAFFLE_SHOP.fics

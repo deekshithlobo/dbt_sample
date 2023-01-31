@@ -1,1 +1,0 @@
-select  name, source, mis_date from ANALYTICS.INC.fics
