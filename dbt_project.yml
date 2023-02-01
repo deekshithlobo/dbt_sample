@@ -35,5 +35,3 @@ models:
   dbt_sample:
     destinations:
       +materialized: table
-    sources:
-      +materialized: table
