@@ -17,7 +17,7 @@ union all
 select * from src_clc
 )
 
-select acc_no, mis_date from final
+select acc_no,NULL as source,NULL as mis_date, load_ts from final
 {% if is_incremental() %}
 
   where concat(acc_no,load_ts) not in ( select concat(acc_no,load_ts)  from {{ this }})

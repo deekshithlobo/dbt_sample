@@ -36,4 +36,4 @@ models:
     destinations:
       +materialized: table
     sources:
-      +materialized: view
+      +materialized: table
