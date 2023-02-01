@@ -17,7 +17,11 @@ union all
 select * from src_clc
 )
 
-select *--acc_no,NULL as source,NULL as mis_date, load_ts 
+select acc_no,
+case when source = 'fic' then 'FIC'
+    when source = 'clcs' then 'CLC' end  as source,
+     mis_date, 
+     load_ts 
 from final
 {% if is_incremental() %}
 
