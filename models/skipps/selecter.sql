@@ -1,9 +1,2 @@
-{{
-    config(materialized = 'table')
-}}
-
-select
-{% for i in range(11) %}
-   current_date(),
-{% endfor %}
-'a'as col
+select *,  '{{var('name')}}' as name from RAW.JAFFLE_SHOP.uir_destination
+where mis_date > '{{ var( 'fm_date')}}'
