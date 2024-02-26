@@ -9,7 +9,9 @@ with
 src_clc as (
     select * from {{ ref ('src_clc')}}
 ),
-
+src_samp as(
+    select * from {{ ref('sample')}}
+)
 final as
 (
 select * from src_fic
